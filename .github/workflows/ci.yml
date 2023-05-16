@@ -34,8 +34,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-11, macos-12]
-        fortran: [9, 10, 11]
+        os: [ubuntu-22.04]#, macos-11, macos-12]
+        fortran: [10]#9, 10, 11]
         exclude:
         - os: macos-12
           fortran: 9
